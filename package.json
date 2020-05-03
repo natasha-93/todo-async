@@ -7,9 +7,12 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
+    "@types/lodash": "^4.14.149",
     "@types/node": "^12.12.37",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
+    "axios": "^0.19.2",
+    "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -19,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "api": "json-server --watch db.json --port 4000"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "json-server": "^0.16.1"
+  },
+  "proxy": "http://localhost:4000"
 }
